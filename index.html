@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC Project 4 - Technical Documentation Page</title>
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+        <nav id="navbar">
+          <header><h2>Content</h2></header>
+          <ul>
+            <li><a id="nav-link" href="#introduction">An Introduction to JavaScript</a></li>
+            <li><a id="nav-link" href="#what_can_it_do">What can in-browser JavaScript do?</a></li>
+            <li><a id="nav-link" href="#what_cant_it_do">What CAN’T in-browser JavaScript do?</a></li>
+            <li><a id="nav-link" href="#what_makes_it_unique">What makes JavaScript unique?</a></li>
+            <li><a id="nav-link" href="#languages_over_javascript">Languages “over” JavaScript</a></li>
+            <li><a id="nav-link" href="#summary">Summary</a></li>
+          </ul>
+        </nav>
+      
+      <!-- Page Content -->
+        <div id="main-doc">    
+            <!-- Section 1 - An Introduction to JavaScript -->
+      
+            <div class="main_section" id="introduction">
+              <header>
+                <h1>An Introduction to JavaScript</h1>
+              </header>
+              <p>Let’s see what’s so special about JavaScript, what we can achieve with it, and which other technologies play well with it.</p>
+            </div>
+      
+            <!-- Section 2 - What is Javascript? -->
+      
+            <div class="main_section" id="what_is_javascript">
+      
+              <h2>What is JavaScript?</h2>
+              <p>JavaScript was initially created to “make web pages alive”.<br/> The programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.<br/> Scripts are provided and executed as
+                plain text. They don’t need special preparation or compilation to run.<br/> In this aspect, JavaScript is very different from another language called Java.</p>
+              <div class="text-container">
+                <p><b>Why JavaScript?</b><br/> When JavaScript was created, it initially had another name: “LiveScript”. But Java was very popular at that time, so it was decided that positioning a new language as a “younger brother” of Java would help.<br/> But
+                  as it evolved, JavaScript became a fully independent language with its own specification called ECMAScript, and now it has no relation to Java at all.</p>
+              </div>
+              <p> Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called the JavaScript engine. The browser has an embedded engine sometimes called a “JavaScript virtual machine”.
+                Different engines have different “codenames”. For example: </p>
+              <ul>
+                <li>V8 - in Chrome and Opera.</li>
+                <li>SpiderMonkey - in Firefox.</li>
+                <li>There are other codenames like “Trident” and “Chakra” for different versions of IE, “ChakraCore” for Microsoft Edge, “Nitro” and “SquirrelFish” for Safari, etc.</li>
+              </ul>
+              <p>The terms above are good to remember because they are used in developer articles on the internet. We’ll use them too. For instance, if “a feature X is supported by V8”, then it probably works in Chrome and Opera.</p>
+              <div class="text-container">
+                <p><b>How do engines work?</b></br>
+                  Engines are complicated. But the basics are easy.</p>
+                <ol>
+                  <li>The engine (embedded if it’s a browser) reads (“parses”) the script.</li>
+                  <li>Then it converts (“compiles”) the script to the machine language.</li>
+                  <li>And then the machine code runs, pretty fast.</li>
+                </ol>
+                <p>The engine applies optimizations at each step of the process. It even watches the compiled script as it runs, analyzes the data that flows through it, and applies optimizations to the machine code based on that knowledge. When it’s done, scripts
+                  run quite fast.</p>
+      
+              </div>
+            </div>
+      
+            <!-- Section 3 - What can in-browser JavaScript do? -->
+      
+            <div class="main_section" id="what_can_it_do">
+      
+              <h2>What can in-browser JavaScript do?</h2>
+      
+              <P>Modern JavaScript is a “safe” programming language. It does not provide low-level access to memory or CPU, because it was initially created for browsers which do not require it.</br>
+      
+                JavaScript’s capabilities greatly depend on the environment it’s running in. For instance, Node.js supports functions that allow JavaScript to read/write arbitrary files, perform network requests, etc.</br>
+      
+                In-browser JavaScript can do everything related to webpage manipulation, interaction with the user, and the webserver.</br>
+      
+                For instance, in-browser JavaScript is able to:</P>
+              <ul>
+                <li>Add new HTML to the page, change the existing content, modify styles.</li>
+                <li>React to user actions, run on mouse clicks, pointer movements, key presses.</li>
+                <li>Send requests over the network to remote servers, download and upload files (so-called AJAX and COMET technologies).</li>
+                <li>Get and set cookies, ask questions to the visitor, show messages.</li>
+                <li>Remember the data on the client-side (“local storage”).</li>
+              </ul>
+      
+            </div>
+      
+            <!-- Section 4 - What CAN’T in-browser JavaScript do? -->
+      
+            <div class="main_section" id="what_cant_it_do">
+              <h2>What CAN’T in-browser JavaScript do?</h2>
+      
+              <p>JavaScript’s abilities in the browser are limited for the sake of the user’s safety. The aim is to prevent an evil webpage from accessing private information or harming the user’s data.</br>
+                Examples of such restrictions include:</p>
+      
+              <ul>
+                <li>JavaScript on a webpage may not read/write arbitrary files on the hard disk, copy them or execute programs. It has no direct access to OS system functions.</br>
+                  Modern browsers allow it to work with files, but the access is limited and only provided if the user does certain actions, like “dropping” a file into a browser window or selecting it via an input tag.<br> There are ways to interact with camera/microphone
+                  and other devices, but they require a user’s explicit permission. So a JavaScript-enabled page may not sneakily enable a web-camera, observe the surroundings and send the information to the NSA.
+                  <li>Different tabs/windows generally do not know about each other. Sometimes they do, for example when one window uses JavaScript to open the other one. But even in this case, JavaScript from one page may not access the other if they come from
+                    different sites (from a different domain, protocol or port).</br>
+                    This is called the “Same Origin Policy”. To work around that, both pages must agree for data exchange and contain a special JavaScript code that handles it. We’ll cover that in the tutorial.</br>
+                    This limitation is, again, for the user’s safety. A page from http://anysite.com which a user has opened must not be able to access another browser tab with the URL http://gmail.com and steal information from there.</li>
+                  <li>JavaScript can easily communicate over the net to the server where the current page came from. But its ability to receive data from other sites/domains is crippled. Though possible, it requires explicit agreement (expressed in HTTP headers)
+                    from the remote side. Once again, that’s a safety limitation.</li>
+              </ul>
+      
+              <p>Such limits do not exist if JavaScript is used outside of the browser, for example on a server. Modern browsers also allow plugin/extensions which may ask for extended permissions.</p>
+      
+            </div>
+      
+            <!-- Section 5 - What makes JavaScript unique? -->
+      
+            <div class="main_section" id="what_makes_it_unique">
+              <h2>What makes JavaScript unique?</h2>
+              <p>There are at least three great things about JavaScript:</p>
+              <div class="text-container">
+                <ul>
+                  <li>Full integration with HTML/CSS.</li>
+                  <li>Simple things are done simply.</li>
+                  <li>Support by all major browsers and enabled by default.</li>
+                </ul>
+              </div>
+              <p>JavaScript is the only browser technology that combines these three things.</br>
+      
+                That’s what makes JavaScript unique. That’s why it’s the most widespread tool for creating browser interfaces.</br>
+      
+                That said, JavaScript also allows to create servers, mobile applications, etc.</p>
+            </div>
+      
+            <!-- Section 6 - Languages “over” JavaScript -->
+      
+            <div class="main_section" id="languages_over_javascript">
+              <h2>Languages “over” JavaScript</h2>
+              <p>The syntax of JavaScript does not suit everyone’s needs. Different people want different features.</br>
+      
+                That’s to be expected, because projects and requirements are different for everyone.</br>
+      
+                So recently a plethora of new languages appeared, which are transpiled (converted) to JavaScript before they run in the browser.</br>
+      
+                Modern tools make the transpilation very fast and transparent, actually allowing developers to code in another language and auto-converting it “under the hood”.</br>
+      
+                Examples of such languages: </p>
+              <ul>
+                <li>CoffeeScript is a “syntactic sugar” for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.</li>
+                <li>TypeScript is concentrated on adding “strict data typing” to simplify the development and support of complex systems. It is developed by Microsoft.</li>
+                <li>Flow also adds data typing, but in a different way. Developed by Facebook.</li>
+                <li>Dart is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.</li>
+              </ul>
+              <p>There are more. Of course, even if we use one of transpiled languages, we should also know JavaScript to really understand what we’re doing.</p>
+            </div>
+      
+            <!-- Section 7 - Summary -->
+      
+            <div class="main_section" id="summary">
+      <h2>Summary</h2>
+              <ul>
+                <li>JavaScript was initially created as a browser-only language, but is now used in many other environments as well.</li>
+                <li>Today, JavaScript has a unique position as the most widely-adopted browser language with full integration with HTML/CSS.</li>
+                <li>There are many languages that get “transpiled” to JavaScript and provide certain features. It is recommended to take a look at them, at least briefly, after mastering JavaScript.</li>
+              </ul>      
+          </div>
+        </div>
+
+</html>
