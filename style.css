@@ -70,8 +70,8 @@ body {
       text-decoration: none;
   }
 
-  a {
-    text-align: left;
+  a:hover {
+    color: white;
   }
 
   b {
@@ -84,13 +84,13 @@ body {
   
   .text-container {
     background: #222230;
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     padding: 1em 3em;
     border-style: solid;
     border-color: #383851;
     border-width: 1px;
-    border-radius: 5px
+    border-radius: 5px;
    /* Box Shadow */
     -webkit-box-shadow: 0px 4px 13px -1px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 4px 13px -1px rgba(0,0,0,0.3);
