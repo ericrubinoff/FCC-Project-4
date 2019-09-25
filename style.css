@@ -48,7 +48,6 @@ html, body {
 
 /* Navbar on small screen */
 
-
 @media (max-width: 750px) {
   #navbar {
     padding: 1.5em 3em;
