@@ -1,15 +1,14 @@
 html {
   height: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
     background: #191927;
     margin: 0; /* Centers content */
     height: 100%;
-    width: 100%;
-    position:fixed; /* Fixes mobile view not taking full width */
-    
+    width: 100%;    
 }
 
 /* Navbar */
@@ -46,7 +45,6 @@ body {
     border-bottom-style: solid; 
     border-color: #383851;
     border-width: 1px;
-    z-index: 1;
     text-align: ;
     overflow: auto;
     position: relative;
@@ -81,7 +79,7 @@ body {
     font-weight: 600;
     font-size: 3em;
     margin: 0;
-  }
+      }
   
 h2, header {
     color: #1484ff;
