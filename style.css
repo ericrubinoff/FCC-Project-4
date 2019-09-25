@@ -40,17 +40,19 @@ body {
   #navbar {
     width: 100%;
     height: 10em;
-    padding: 1.5em 0;
+    padding: 1.5em 5em;
     border-bottom-style: solid; 
     border-color: #383851;
     border-width: 1px;
     z-index: 1;
-    text-align: center;
+    text-align: ;
     overflow: auto;
+    position: relative;
+
     
   }
   li {
-    text-align: center;
+    text-align: ;
   }
 }
 
@@ -68,23 +70,25 @@ body {
   @media (max-width: 700px) {
   #main-doc {
     margin-left: 0;
-    margin-top: 8em;
 }
   }
   
-  h1 {
+  #h1 {
     color: #1484ff;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     font-size: 3em;
     margin: 0;
   }
   
-  h2 {
+h2, header {
     color: #1484ff;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     font-size: 2em;
     margin: 0;
   }
+
   
   p, ul, ol, a {
       font-family: 'Open Sans', sans-serif;
@@ -99,10 +103,6 @@ body {
     color: white;
   }
 
-  b {
-    font-size: 1.25em;
-  }
-  
   li {
     margin-bottom: 0.5em;
   }
@@ -113,8 +113,9 @@ body {
     margin: 1.5em 0;
 
   }
+
   
-  .text-container {
+  .text-container, code {
     background: #222230;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -127,4 +128,8 @@ body {
     -webkit-box-shadow: 0px 4px 13px -1px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 4px 13px -1px rgba(0,0,0,0.3);
     box-shadow: 0px 4px 13px -1px rgba(0,0,0,0.3);
+  }
+
+  code {
+    display: none;
   }

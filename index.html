@@ -9,37 +9,38 @@
     <title>FCC Project 4 - Technical Documentation Page</title>
     
 </head>
-<body>
 
+<body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <!-- Navbar -->
         <nav id="navbar">
-          <header><h2>Content</h2><hr noshade=""></header>
+          <header>Javascript Documentation</header><hr noshade="">
           <ul>
-            <li><a id="nav-link" href="#introduction">An Introduction to JavaScript</a></li>
-            <li><a id="nav-link" href="#what_can_it_do">What can in-browser JavaScript do?</a></li>
-            <li><a id="nav-link" href="#what_cant_it_do">What CAN’T in-browser JavaScript do?</a></li>
-            <li><a id="nav-link" href="#what_makes_it_unique">What makes JavaScript unique?</a></li>
-            <li><a id="nav-link" href="#languages_over_javascript">Languages “over” JavaScript</a></li>
-            <li><a id="nav-link" href="#summary">Summary</a></li>
+            <li><a class="nav-link" href="#An_Introduction_to_JavaScript">An Introduction to JavaScript</a></li>
+            <li><a class="nav-link" href="#What_is_JavaScript?">What is JavaScript?</a></li>
+            <li><a class="nav-link" href="#What_can_in-browser_JavaScript_do?">What can in-browser JavaScript do?</a></li>
+            <li><a class="nav-link" href="#What_CAN’T_in-browser_JavaScript_do?">What CAN’T in-browser JavaScript do?</a></li>
+            <li><a class="nav-link" href="#What_makes_JavaScript_unique?">What makes JavaScript unique?</a></li>
+            <li><a class="nav-link" href="#Languages_“over”_JavaScript">Languages “over” JavaScript</a></li>
+            <li><a class="nav-link" href="#Summary">Summary</a></li>
+
           </ul>
         </nav>
       
       <!-- Page Content -->
-        <div id="main-doc">    
+        <main id="main-doc">    
             <!-- Section 1 - An Introduction to JavaScript -->
       
-            <div class="main_section" id="introduction">
-              <header>
-                <h1>An Introduction to JavaScript</h1><hr noshade>
-              </header>
+            <section class="main-section" id="An_Introduction_to_JavaScript">
+              <header id="h1">An Introduction to JavaScript</header><hr noshade>
               <p>Let’s see what’s so special about JavaScript, what we can achieve with it, and which other technologies play well with it.</p>
-            </div>
+            </section>
       
             <!-- Section 2 - What is Javascript? -->
       
-            <div class="main_section" id="what_is_javascript">
+            <section class="main-section" id="What_is_JavaScript?">
       
-              <h2>What is JavaScript?</h2>
+              <header>What is JavaScript?</header>
               <p>JavaScript was initially created to “make web pages alive”.<br/> The programs in this language are called scripts. They can be written right in a web page’s HTML and run automatically as the page loads.<br/> Scripts are provided and executed as
                 plain text. They don’t need special preparation or compilation to run. In this aspect, JavaScript is very different from another language called Java.</p>
               <div class="text-container">
@@ -47,12 +48,15 @@
                   as it evolved, JavaScript became a fully independent language with its own specification called ECMAScript, and now it has no relation to Java at all.</p>
               </div>
               <p> Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called the JavaScript engine. The browser has an embedded engine sometimes called a “JavaScript virtual machine”.
-                Different engines have different “codenames”. For example: </p>
-              <ul>
+                Different engines have different “codenames”.</p>
+                <div class="text-container">
+                  <p><b>Examples of commonly used engines include:</b></p>
+                <ul>
                 <li>V8 - in Chrome and Opera.</li>
                 <li>SpiderMonkey - in Firefox.</li>
                 <li>There are other codenames like “Trident” and “Chakra” for different versions of IE, “ChakraCore” for Microsoft Edge, “Nitro” and “SquirrelFish” for Safari, etc.</li>
               </ul>
+              </div>
               <p>The terms above are good to remember because they are used in developer articles on the internet. We’ll use them too. For instance, if “a feature X is supported by V8”, then it probably works in Chrome and Opera.</p>
               <div class="text-container">
                 <p><b>How do engines work?</b></br>
@@ -66,21 +70,21 @@
                   run quite fast.</p>
       
               </div>
-            </div>
+            </section>
       
             <!-- Section 3 - What can in-browser JavaScript do? -->
       
-            <div class="main_section" id="what_can_it_do">
+            <section class="main-section" id="What_can_in-browser_JavaScript_do?">
       
-              <h2>What can in-browser JavaScript do?</h2>
+              <header>What can in-browser JavaScript do?</header>
       
               <P>Modern JavaScript is a “safe” programming language. It does not provide low-level access to memory or CPU, because it was initially created for browsers which do not require it.</br>
       
                 JavaScript’s capabilities greatly depend on the environment it’s running in. For instance, Node.js supports functions that allow JavaScript to read/write arbitrary files, perform network requests, etc.</br>
       
                 In-browser JavaScript can do everything related to webpage manipulation, interaction with the user, and the webserver.</br>
-      
-                For instance, in-browser JavaScript is able to:</P>
+                <div class="text-container">
+                <p><b>For instance, in-browser JavaScript is able to:</b></p>
               <ul>
                 <li>Add new HTML to the page, change the existing content, modify styles.</li>
                 <li>React to user actions, run on mouse clicks, pointer movements, key presses.</li>
@@ -88,13 +92,14 @@
                 <li>Get and set cookies, ask questions to the visitor, show messages.</li>
                 <li>Remember the data on the client-side (“local storage”).</li>
               </ul>
-      
             </div>
+      
+            </section>
       
             <!-- Section 4 - What CAN’T in-browser JavaScript do? -->
       
-            <div class="main_section" id="what_cant_it_do">
-              <h2>What CAN’T in-browser JavaScript do?</h2>
+            <section class="main-section" id="What_CAN’T_in-browser_JavaScript_do?">
+              <header>What CAN’T in-browser JavaScript do?</header>
       
               <p>JavaScript’s abilities in the browser are limited for the sake of the user’s safety. The aim is to prevent an evil webpage from accessing private information or harming the user’s data.</br>
                 Examples of such restrictions include:</p>
@@ -113,14 +118,14 @@
       
               <p>Such limits do not exist if JavaScript is used outside of the browser, for example on a server. Modern browsers also allow plugin/extensions which may ask for extended permissions.</p>
       
-            </div>
+            </section>
       
             <!-- Section 5 - What makes JavaScript unique? -->
       
-            <div class="main_section" id="what_makes_it_unique">
-              <h2>What makes JavaScript unique?</h2>
+            <section class="main-section" id="What_makes_JavaScript_unique?">
+              <header>What makes JavaScript unique?</header>
               <p>There are at least three great things about JavaScript:</p>
-              <div class="text-container">
+              <div class="text-container"><code></code><code></code><code></code><code></code><code></code>
                 <ul>
                   <li>Full integration with HTML/CSS.</li>
                   <li>Simple things are done simply.</li>
@@ -132,12 +137,12 @@
                 That’s what makes JavaScript unique. That’s why it’s the most widespread tool for creating browser interfaces.</br>
       
                 That said, JavaScript also allows to create servers, mobile applications, etc.</p>
-            </div>
+              </section>
       
             <!-- Section 6 - Languages “over” JavaScript -->
       
-            <div class="main_section" id="languages_over_javascript">
-              <h2>Languages “over” JavaScript</h2>
+            <section class="main-section" id="Languages_“over”_JavaScript">
+              <header>Languages “over” JavaScript</header>
               <p>The syntax of JavaScript does not suit everyone’s needs. Different people want different features.</br>
       
                 That’s to be expected, because projects and requirements are different for everyone.</br>
@@ -154,18 +159,18 @@
                 <li>Dart is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.</li>
               </ul>
               <p>There are more. Of course, even if we use one of transpiled languages, we should also know JavaScript to really understand what we’re doing.</p>
-            </div>
+            </section>
       
             <!-- Section 7 - Summary -->
       
-            <div class="main_section" id="summary">
-      <h2>Summary</h2>
+            <section class="main-section" id="Summary">
+      <header>Summary</header>
               <ul>
                 <li>JavaScript was initially created as a browser-only language, but is now used in many other environments as well.</li>
                 <li>Today, JavaScript has a unique position as the most widely-adopted browser language with full integration with HTML/CSS.</li>
                 <li>There are many languages that get “transpiled” to JavaScript and provide certain features. It is recommended to take a look at them, at least briefly, after mastering JavaScript.</li>
               </ul>      
-          </div>
-        </div>
+            </section>
+        </main>
 
 </html>
