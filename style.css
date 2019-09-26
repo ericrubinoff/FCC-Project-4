@@ -16,6 +16,8 @@ body {
 
 
 
+
+
 html, body {
   margin: 0;
   padding: 0;
@@ -78,7 +80,8 @@ html, body {
 
   @media (max-width: 840px) {
   #main-doc {
-    margin-left: 0;
+    margin: 0;
+    padding-left: 0.5em;
 }
 #content-container {
   padding: 3.5em 3em;
