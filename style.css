@@ -48,7 +48,7 @@ html, body {
 
 /* Navbar on small screen */
 
-@media (max-width: 750px) {
+@media (max-width: 840px) {
   #navbar {
     padding: 1.5em 3em;
     width: 100%;
@@ -79,7 +79,7 @@ html, body {
 
 /* Content on small screen */
 
-  @media (max-width: 750px) {
+  @media (max-width: 840px) {
   #main-doc {
     margin-left: 0;
 }
